@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>责任与公益</title>
+    <script src="./js/vue.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery.min.js"></script>
+</head>
+
+<body id="rWelfare">
+    <div class="index-top center">
+        <ul>
+            <li><a href="./index.html">首页</a></li>
+            <li class="hideL1"><a href="./aboutUs.html">关于我们</a></li>
+            <li class="hideL2"><a href="./brandProducts.html">品牌与产品</a></li>
+            <li class="hideL3"><a href="./nutritionHealth.html">营养与健康</a></li>
+            <li class="hideL4 green"><a href="./responsibleWelfare.html">责任与公益</a></li>
+            <li class="hideL5"><a href="./newsActivities.html">新闻与活动</a></li>
+        </ul>
+    </div>
+    <div class="rTop clearfix">
+        <div>
+            <p>点滴之爱<strong>感动</strong>世界</p>
+        </div>
+        <div>
+            <ul>
+                <li>数据公布</li>
+                <li>爱心公益</li>
+                <li>绿色环保</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 关于我们 -->
+    <div class="tTop clearfix" style="display: none;">
+        <div>
+            <p>只为点滴<strong>幸福</strong></p>
+        </div>
+        <div>
+            <ul>
+                <li>集团介绍</li>
+                <li>核心价值体系</li>
+                <li>企业荣誉</li>
+            </ul>
+            <ul>
+                <li>投资者专区</li>
+                <li>人力资源</li>
+                <li>联系我们</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 品牌与产品 -->
+    <div class="bTop clearfix" style="display: none;">
+        <div>
+            <p>点滴<strong>品质</strong>从“小”做起</p>
+        </div>
+        <div>
+            <ul>
+                <li>品牌产品</li>
+                <li>产品品类</li>
+                <li>生产到餐桌</li>
+            </ul>
+            <ul>
+                <li>360°探秘</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 营养与健康 -->
+    <div class="nHTop clearfix" style="display: none;">
+        <div>
+            <p>点滴营养点滴<strong>健康</strong></p>
+        </div>
+        <div>
+            <ul>
+                <li>营养课程</li>
+                <li>健康饮食</li>
+                <li>消费贴士</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 责任与公益 -->
+    <!-- <div class="rTop clearfix" style="display: none;">
+        <div>
+            <p>点滴之爱<strong>感动</strong>世界</p>
+        </div>
+        <div>
+            <ul>
+                <li>数据公布</li>
+                <li>爱心公益</li>
+                <li>绿色环保</li>
+            </ul>
+        </div>
+    </div> -->
+    <!-- 新闻与活动 -->
+    <div class="newsActTop clearfix" style="display: none;">
+        <div>
+            <p>点滴<strong>沟通</strong>链接你我</p>
+        </div>
+        <div>
+            <ul>
+                <li>招标公告</li>
+                <li>精彩活动</li>
+                <li>新闻动态</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            // 关于我们
+            $(".hideL1").mouseover(function() {
+                $(".rTop").css("display", "none")
+                $(".tTop").css("display", "inline-block")
+            });
+            $(".hideL1").mouseout(function() {
+                $(".tTop").css("display", "none")
+                $(".rTop").css("display", "inline-block")
+            });
+            // 品牌与产品
+            $(".hideL2").mouseover(function() {
+                $(".rTop").css("display", "none")
+                $(".bTop").css("display", "inline-block")
+            });
+            $(".hideL2").mouseout(function() {
+                $(".bTop").css("display", "none")
+                $(".rTop").css("display", "inline-block")
+            });
+            // 营养与健康
+            $(".hideL3").mouseover(function() {
+                $(".rTop").css("display", "none")
+                $(".nHTop").css("display", "inline-block")
+            });
+            $(".hideL3").mouseout(function() {
+                $(".nHTop").css("display", "none")
+                $(".rTop").css("display", "inline-block")
+            });
+            // 责任与公益
+            // $(".hideL4").mouseover(function() {
+            //     $(".rTop").css("display", "inline-block")
+            // });
+            // $(".hideL4").mouseout(function() {
+            //     $(".rTop").css("display", "none")
+            // });
+            // 新闻与活动
+            $(".hideL5").mouseover(function() {
+                $(".rTop").css("display", "none")
+                $(".newsActTop").css("display", "inline-block")
+            });
+            $(".hideL5").mouseout(function() {
+                $(".newsActTop").css("display", "none")
+                $(".rTop").css("display", "inline-block")
+            });
+        });
+    </script>
+
+    <div class="logoUs">
+        <p class="logoUs1">始终心怀<strong>感恩</strong>，</p>
+        <p class="logoUs2">我们与社会共同<strong>成长。</strong></p>
+        <p>Keep being thankful grow up with the society.</p>
+    </div>
+    <!-- 资讯内容区 -->
+    <div class="data center clearfix">
+        <div class="dataLeftBrand">
+            <div class="dLWelfare">
+                <li>责任与公益</li>
+                <li>公益环保</li>
+                <li>与社会共同成长</li>
+            </div>
+            <div>
+                <div class="rWelfareTitleLeft">
+                    <p>企业观点</p>
+                </div>
+                <div class="rWelfareBodyLeft">
+                    <p>做质量最好、最专业、最专注的乳制品企业。为消费者奉献安全、优质、健康的乳制品。</p>
+                    <p class="rWelfareBLeft">我们承诺：</p>
+                    <div>
+                        <li>环境保护</li>
+                        <li>社会责任</li>
+                        <li>关怀社会</li>
+                        <li>企业管制</li>
+                        <li>人才建设</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dataRightBrand">
+            <div class="aboutTop">
+                <p class="aboutTop1">责任与公益</p>
+                <div>
+                    <p>我们始终不忘回馈社会，因为每一寸，都离不开社会的滋养。</p>
+                    <p>我们肩负责任，希望通过努力来改变，产生影响</p>
+                </div>
+            </div>
+            <div class="rWelfareOne">
+                <p class="rWelfareS">公益环保</p>
+                <div class="rWelfareB">
+                    <div class="rWelfareTitle clearfix">
+                        <p>秉承绿色环保，绿色发展，绿色复兴理念</p>
+                        <p>——环保理念</p>
+                    </div>
+                    <div class="rWelfareImg">
+                        <img src="./image/responsibleWelfare/centerD.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="rWelfareOne">
+                <p class="rWelfareS">与社会共同成长</p>
+                <div class="rWelfareB">
+                    <div class="rWelfareLeft">
+                        <li>
+                            <p>大巴山迎来“孙老师”我回老家上堂课...</p>
+                            <p>2021-05-23</p>
+                        </li>
+                        <li>
+                            <p>给小手指温暖 交换卡路里掀动冬日“暖流”...</p>
+                            <p>2021-05-23</p>
+                        </li>
+                        <li>
+                            <p>我们和伙伴们一起为最美乡村教师献上教师节厚礼</p>
+                            <p>2021-05-23</p>
+                        </li>
+                        <li>
+                            <p>大巴山迎来“孙老师”我回老家上堂课...</p>
+                            <p>2021-05-23</p>
+                        </li>
+                        <li>
+                            <p>大巴山迎来“二号孙老师”我回老家上堂课...</p>
+                            <p>2021-05-23</p>
+                        </li>
+                        <li>
+                            <p>大巴山迎来“三号孙老师”我回老家上堂课...</p>
+                            <p>2021-05-23</p>
+                        </li>
+                        <li>
+                            <p>大巴山迎来“四号孙老师”我回老家上堂课...</p>
+                            <p>2021-05-23</p>
+                        </li>
+                    </div>
+                    <div class="rWelfareRight clearfix">
+                        <p>大巴山迎来“孙老师”我回老家上堂课...</p>
+                        <p style="line-height: 2em;">坚守大山村小30年，夫妻教师 隔山相望。2013年，四川省巴 中市通江县石庙子村小火天岗 村小的廖占富、张兴琼...</p>
+                        <div class="rWRleftRight">
+                            <p>
+                                <</p>
+                                    <p>></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部信息区 -->
+    <div class="index-bottom center ">
+        <ul class="clearfix ">
+            <li>关于我们</li>
+            <li>媒体中心</li>
+            <li>投资者中心</li>
+            <li>加入我们</li>
+            <li>
+                <p>其他站点查询</p>
+                <img src="./image/logo1.png " alt=" ">
+            </li>
+            <li>
+                <p>官方微信</p>
+                <img src="./image/logo2.png " alt=" ">
+            </li>
+            <li>
+                <p>官方微信</p>
+                <img src="./image/logo3.png " alt=" ">
+            </li>
+        </ul>
+    </div>
+    <!-- 底部ICP -->
+    <div class="icp-bottom ">
+        <p>CopyRight 2006-2013,All Rights Reserved 内蒙古蒙牛乳业 蒙ICP备05005622号 </p>
+    </div>
+</body>
+
+</html>

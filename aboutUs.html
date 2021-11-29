@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们</title>
+    <script src="./js/vue.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery.min.js"></script>
+</head>
+
+<body id="aboutUs">
+    <div class="index-top center">
+        <ul>
+            <li><a href="./index.html">首页</a></li>
+            <li class="hideL1 green"><a href="./aboutUs.html">关于我们</a></li>
+            <li class="hideL2"><a href="./brandProducts.html">品牌与产品</a></li>
+            <li class="hideL3"><a href="./nutritionHealth.html">营养与健康</a></li>
+            <li class="hideL4"><a href="./responsibleWelfare.html">责任与公益</a></li>
+            <li class="hideL5"><a href="./newsActivities.html">新闻与活动</a></li>
+        </ul>
+    </div>
+    <div class="tTop clearfix">
+        <div>
+            <p>只为点滴<strong>幸福</strong></p>
+        </div>
+        <div>
+            <ul>
+                <li>集团介绍</li>
+                <li>核心价值体系</li>
+                <li>企业荣誉</li>
+            </ul>
+            <ul>
+                <li>投资者专区</li>
+                <li>人力资源</li>
+                <li>联系我们</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 关于我们 -->
+    <!-- <div class="tTop clearfix" style="display: none;">
+        <div>
+            <p>只为点滴<strong>幸福</strong></p>
+        </div>
+        <div>
+            <ul>
+                <li>集团介绍</li>
+                <li>核心价值体系</li>
+                <li>企业荣誉</li>
+            </ul>
+            <ul>
+                <li>投资者专区</li>
+                <li>人力资源</li>
+                <li>联系我们</li>
+            </ul>
+        </div>
+    </div> -->
+    <!-- 品牌与产品 -->
+    <div class="bTop clearfix" style="display: none;">
+        <div>
+            <p>点滴<strong>品质</strong>从“小”做起</p>
+        </div>
+        <div>
+            <ul>
+                <li>品牌产品</li>
+                <li>产品品类</li>
+                <li>生产到餐桌</li>
+            </ul>
+            <ul>
+                <li>360°探秘</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 营养与健康 -->
+    <div class="nHTop clearfix" style="display: none;">
+        <div>
+            <p>点滴营养点滴<strong>健康</strong></p>
+        </div>
+        <div>
+            <ul>
+                <li>营养课程</li>
+                <li>健康饮食</li>
+                <li>消费贴士</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 责任与公益 -->
+    <div class="rTop clearfix" style="display: none;">
+        <div>
+            <p>点滴之爱<strong>感动</strong>世界</p>
+        </div>
+        <div>
+            <ul>
+                <li>数据公布</li>
+                <li>爱心公益</li>
+                <li>绿色环保</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 新闻与活动 -->
+    <div class="newsActTop clearfix" style="display: none;">
+        <div>
+            <p>点滴<strong>沟通</strong>链接你我</p>
+        </div>
+        <div>
+            <ul>
+                <li>招标公告</li>
+                <li>精彩活动</li>
+                <li>新闻动态</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            // 关于我们
+            // $(".hideL1").mouseover(function() {
+            //     $(".tTop").css("display", "inline-block")
+            // });
+            // $(".hideL1").mouseout(function() {
+            //     $(".tTop").css("display", "none")
+            // });
+            // 品牌与产品
+            $(".hideL2").mouseover(function() {
+                $(".bTop").css("display", "inline-block")
+                $(".tTop").css("display", "none")
+            });
+            $(".hideL2").mouseout(function() {
+                $(".bTop").css("display", "none")
+                $(".tTop").css("display", "inline-block")
+            });
+            // 营养与健康
+            $(".hideL3").mouseover(function() {
+                $(".tTop").css("display", "none")
+                $(".nHTop").css("display", "inline-block")
+            });
+            $(".hideL3").mouseout(function() {
+                $(".nHTop").css("display", "none")
+                $(".tTop").css("display", "inline-block")
+            });
+            // 责任与公益
+            $(".hideL4").mouseover(function() {
+                $(".tTop").css("display", "none")
+                $(".rTop").css("display", "inline-block")
+            });
+            $(".hideL4").mouseout(function() {
+                $(".rTop").css("display", "none")
+                $(".tTop").css("display", "inline-block")
+            });
+            // 新闻与活动
+            $(".hideL5").mouseover(function() {
+                $(".tTop").css("display", "none")
+                $(".newsActTop").css("display", "inline-block")
+            });
+            $(".hideL5").mouseout(function() {
+                $(".newsActTop").css("display", "none")
+                $(".tTop").css("display", "inline-block")
+            });
+        });
+    </script>
+    <div class="logoUs">
+        <p class="logoUs1">我们不懈<strong>努力</strong>，</p>
+        <p class="logoUs2">只为点滴<strong>幸福</strong>。</p>
+        <p>We work trelessly every drop of happiness</p>
+    </div>
+    <!-- 资讯内容区 -->
+    <div class="data center clearfix">
+        <div class="dataLeftUs">
+            <li>关于我们</li>
+            <li>集团介绍</li>
+            <li>核心价值体系</li>
+            <li>企业观点</li>
+            <li>企业荣誉</li>
+            <li>投资者专区</li>
+            <li>人力资源</li>
+            <li>联系我们</li>
+        </div>
+        <div class="dataRightUs">
+            <div class="aboutTop">
+                <p class="aboutTop1">关于我们</p>
+                <div>
+                    <p>我们付出所有，不断前行，只为让你感受到这每一滴的幸福。</p>
+                    <p>以消费者为中心，成为创新引领的营养健康食品公司。</p>
+                </div>
+            </div>
+            <div class="aboutOne">
+                <div class="aboutImg">
+                    <img src="./image/aboutUs/about.png" alt="">
+                </div>
+                <div class="aboutText clearfix">
+                    <p>Arla-爱氏晨曦及中粮集团签署合作协议开始迈入质量管理新篇章</p>
+                    <p>2012年6月15日，Arla-爱氏晨曦及中国最大的粮油食品企业中粮集团共同签署了一系列协议，Arla-爱氏晨曦以22亿港元入股，持股约5.9%，成为继中粮之后的第二大战略股东（现为第三大战略股东）。Arla-爱氏晨曦参与实际运营，双方的合作覆盖从前端奶源管理到生产质量控制等关键领域，快速实现与国际乳业先进管理水平接轨。</p>
+                    <p class="clearfix ">更多>></p>
+                </div>
+            </div>
+            <div class="aboutFont clearfix ">
+                <p>企业荣誉</p>
+                <p>我们感谢所有消费者，正是你们长久以来的支持和信任，使我们能够持续赢得社会的认可，成为一家值得尊敬和信任的公司。我们将一如既往地发挥在产品、环境、公益和社会等方面的高度责任心，用心做好每一步。</p>
+                <p>更多>></p>
+            </div>
+            <div class="aboutFont clearfix ">
+                <p>投资者中心</p>
+                <p>本企业始建于1999年8月，您可以在此访问由本公司发行的相关的债卷信息，如果您有兴趣，可以通过联系我们的投资关系联络人进行债卷的投资。</p>
+                <p>更多>></p>
+            </div>
+            <div class="aboutFont2 clearfix ">
+                <p>联系我们</p>
+                <p>谢谢你愿意与我们联络，我们乐于为您效劳！您可以根据需要通过服务专线等方式直接与我们联络。</p>
+                <p>全国服务热线：800-805-3333 或 400-600-3333</p>
+                <p>更多>></p>
+            </div>
+        </div>
+    </div>
+    <!-- 底部信息区 -->
+    <div class="index-bottom center ">
+        <ul class="clearfix ">
+            <li>关于我们</li>
+            <li>媒体中心</li>
+            <li>投资者中心</li>
+            <li>加入我们</li>
+            <li>
+                <p>其他站点查询</p>
+                <img src="./image/logo1.png " alt=" ">
+            </li>
+            <li>
+                <p>官方微信</p>
+                <img src="./image/logo2.png " alt=" ">
+            </li>
+            <li>
+                <p>官方微信</p>
+                <img src="./image/logo3.png " alt=" ">
+            </li>
+        </ul>
+    </div>
+    <!-- 底部ICP -->
+    <div class="icp-bottom ">
+        <p>CopyRight 2006-2013,All Rights Reserved 内蒙古蒙牛乳业 蒙ICP备05005622号 </p>
+    </div>
+</body>
+
+</html>

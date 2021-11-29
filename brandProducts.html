@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>品牌与产品</title>
+    <script src="./js/vue.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery.min.js"></script>
+</head>
+
+<body id="brandP">
+    <div class="index-top center">
+        <ul>
+            <li><a href="./index.html">首页</a></li>
+            <li class="hideL1"><a href="./aboutUs.html">关于我们</a></li>
+            <li class="hideL2 orange"><a href="./brandProducts.html">品牌与产品</a></li>
+            <li class="hideL3"><a href="./nutritionHealth.html">营养与健康</a></li>
+            <li class="hideL4"><a href="./responsibleWelfare.html">责任与公益</a></li>
+            <li class="hideL5"><a href="./newsActivities.html">新闻与活动</a></li>
+        </ul>
+    </div>
+    <div class="bTop clearfix">
+        <div>
+            <p>点滴<strong>品质</strong>从“小”做起</p>
+        </div>
+        <div>
+            <ul>
+                <li>品牌产品</li>
+                <li>产品品类</li>
+                <li>生产到餐桌</li>
+            </ul>
+            <ul>
+                <li>360°探秘</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 关于我们 -->
+    <div class="tTop clearfix" style="display: none;">
+        <div>
+            <p>只为点滴<strong>幸福</strong></p>
+        </div>
+        <div>
+            <ul>
+                <li>集团介绍</li>
+                <li>核心价值体系</li>
+                <li>企业荣誉</li>
+            </ul>
+            <ul>
+                <li>投资者专区</li>
+                <li>人力资源</li>
+                <li>联系我们</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 品牌与产品 -->
+    <!-- <div class="bTop clearfix" style="display: none;">
+        <div>
+            <p>点滴<strong>品质</strong>从“小”做起</p>
+        </div>
+        <div>
+            <ul>
+                <li>品牌产品</li>
+                <li>产品品类</li>
+                <li>生产到餐桌</li>
+            </ul>
+            <ul>
+                <li>360°探秘</li>
+            </ul>
+        </div>
+    </div> -->
+    <!-- 营养与健康 -->
+    <div class="nHTop clearfix" style="display: none;">
+        <div>
+            <p>点滴营养点滴<strong>健康</strong></p>
+        </div>
+        <div>
+            <ul>
+                <li>营养课程</li>
+                <li>健康饮食</li>
+                <li>消费贴士</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 责任与公益 -->
+    <div class="rTop clearfix" style="display: none;">
+        <div>
+            <p>点滴之爱<strong>感动</strong>世界</p>
+        </div>
+        <div>
+            <ul>
+                <li>数据公布</li>
+                <li>爱心公益</li>
+                <li>绿色环保</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 新闻与活动 -->
+    <div class="newsActTop clearfix" style="display: none;">
+        <div>
+            <p>点滴<strong>沟通</strong>链接你我</p>
+        </div>
+        <div>
+            <ul>
+                <li>招标公告</li>
+                <li>精彩活动</li>
+                <li>新闻动态</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            // 关于我们
+            $(".hideL1").mouseover(function() {
+                $(".bTop").css("display", "none")
+                $(".tTop").css("display", "inline-block")
+            });
+            $(".hideL1").mouseout(function() {
+                $(".tTop").css("display", "none")
+                $(".bTop").css("display", "inline-block")
+            });
+            // 品牌与产品
+            // $(".hideL2").mouseover(function() {
+            //     $(".bTop").css("display", "inline-block")
+            // });
+            // $(".hideL2").mouseout(function() {
+            //     $(".bTop").css("display", "none")
+            // });
+            // 营养与健康
+            $(".hideL3").mouseover(function() {
+                $(".bTop").css("display", "none")
+                $(".nHTop").css("display", "inline-block")
+            });
+            $(".hideL3").mouseout(function() {
+                $(".nHTop").css("display", "none")
+                $(".bTop").css("display", "inline-block")
+            });
+            // 责任与公益
+            $(".hideL4").mouseover(function() {
+                $(".bTop").css("display", "none")
+                $(".rTop").css("display", "inline-block")
+            });
+            $(".hideL4").mouseout(function() {
+                $(".rTop").css("display", "none")
+                $(".bTop").css("display", "inline-block")
+            });
+            // 新闻与活动
+            $(".hideL5").mouseover(function() {
+                $(".bTop").css("display", "none")
+                $(".newsActTop").css("display", "inline-block")
+            });
+            $(".hideL5").mouseout(function() {
+                $(".newsActTop").css("display", "none")
+                $(".bTop").css("display", "inline-block")
+            });
+        });
+    </script>
+
+    <div class="logoUs">
+        <p class="logoUs1">用心塑造好<strong>品质</strong>，</p>
+        <p class="logoUs2">为生活呈现<strong>缤纷</strong>美好。</p>
+        <p>Concentrate on quality,make life more beautiful.</p>
+    </div>
+    <!-- 资讯内容区 -->
+    <div class="data center clearfix">
+        <div class="dataLeftBrand">
+            <div class="dLBrand">
+                <li>品牌与产品</li>
+                <li>我们的品牌</li>
+                <li>产品分类</li>
+                <li>加工到餐桌</li>
+            </div>
+            <div>
+                <div class="dBrandTitle">
+                    <p>品牌与产品</p>
+                </div>
+                <div class="dBrandBody">
+                    <p>白领吃奶酪的好处</p>
+                    <p>对于大城市的都市白领来说，脑力和体力消耗大，精神压力大，往往不注意身体修养忽视早餐，都市白领透支身体的现象。</p>
+                    <p>更多>></p>
+                </div>
+            </div>
+            <div>
+                <div class="dBrandTitle">
+                    <p>360°探秘</p>
+                </div>
+                <div class="dBrandBody clearfix">
+                    <p>带你探秘真实的基地</p>
+                    <p>透过全景视频与图片，探秘我们的林生产基地，纵览绿色全产业链。</p>
+                    <p>更多>></p>
+                    <div class="dBrandBody-img">
+                        <img src="./image/brandProducts/logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dataRightBrand">
+            <div class="brandTop">
+                <p class="brandTop1">品牌与产品</p>
+                <div>
+                    <p>我们将对生活的热情倾注于每款产品，以严谨细致的态度为您呈现。</p>
+                    <p>期待以丰富的种类和优良的品质带来更多美好。</p>
+                </div>
+            </div>
+            <div class="brandOne">
+                <p>品牌</p>
+                <div class="banners">
+                    <div class="bLeft">
+                        <img src="./image/left.png" alt="">
+                    </div>
+                    <div class="bImg">
+                        <ul>
+                            <li><img src="./image/brand1.png" alt=""></li>
+                            <li><img src="./image/brand2.png" alt=""></li>
+                            <li><img src="./image/brand3.png" alt=""></li>
+                            <li><img src="./image/brand1.png" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="bRight">
+                        <img src="./image/right.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="brandFont clearfix ">
+                <p>产品分类</p>
+                <div>
+                    <li><img src="./image/brandProducts/banner1.png" alt=""></li>
+                    <li><img src="./image/brandProducts/banner2.png" alt=""></li>
+                    <li><img src="./image/brandProducts/banner3.png" alt=""></li>
+                    <li><img src="./image/brandProducts/banner4.png" alt=""></li>
+                    <li><img src="./image/brandProducts/banner5.png" alt=""></li>
+                    <li><img src="./image/brandProducts/banner6.png" alt=""></li>
+                </div>
+            </div>
+            <div class="brandFont">
+                <p>加工到餐桌</p>
+                <p>自我们成立之初，我们就致力于建立绿色、透明的产业链。零污染的牧场管理与奶源收集；高科技加工与研发；严格的质检便准；规范化的运输管理，在链条上的每个环节，我们都力求完美，期待为消费者带来纯净的健康享受。</p>
+            </div>
+        </div>
+    </div>
+    <!-- 底部信息区 -->
+    <div class="index-bottom center ">
+        <ul class="clearfix ">
+            <li>关于我们</li>
+            <li>媒体中心</li>
+            <li>投资者中心</li>
+            <li>加入我们</li>
+            <li>
+                <p>其他站点查询</p>
+                <img src="./image/logo1.png " alt=" ">
+            </li>
+            <li>
+                <p>官方微信</p>
+                <img src="./image/logo2.png " alt=" ">
+            </li>
+            <li>
+                <p>官方微信</p>
+                <img src="./image/logo3.png " alt=" ">
+            </li>
+        </ul>
+    </div>
+    <!-- 底部ICP -->
+    <div class="icp-bottom ">
+        <p>CopyRight 2006-2013,All Rights Reserved 内蒙古蒙牛乳业 蒙ICP备05005622号 </p>
+    </div>
+</body>
+
+</html>

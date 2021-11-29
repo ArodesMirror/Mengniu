@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>营养与健康</title>
+    <script src="./js/vue.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery.min.js"></script>
+</head>
+
+<body id="nHealth">
+    <div class="index-top center">
+        <ul>
+            <li><a href="./index.html">首页</a></li>
+            <li class="hideL1"><a href="./aboutUs.html">关于我们</a></li>
+            <li class="hideL2"><a href="./brandProducts.html">品牌与产品</a></li>
+            <li class="hideL3 orange"><a href="./nutritionHealth.html">营养与健康</a></li>
+            <li class="hideL4"><a href="./responsibleWelfare.html">责任与公益</a></li>
+            <li class="hideL5"><a href="./newsActivities.html">新闻与活动</a></li>
+        </ul>
+    </div>
+    <div class="nHTop clearfix">
+        <div>
+            <p>点滴营养点滴<strong>健康</strong></p>
+        </div>
+        <div>
+            <ul>
+                <li>营养课程</li>
+                <li>健康饮食</li>
+                <li>消费贴士</li>
+            </ul>
+        </div>
+    </div>
+
+    <!--  -->
+    <!-- 关于我们 -->
+    <div class="tTop clearfix" style="display: none;">
+        <div>
+            <p>只为点滴<strong>幸福</strong></p>
+        </div>
+        <div>
+            <ul>
+                <li>集团介绍</li>
+                <li>核心价值体系</li>
+                <li>企业荣誉</li>
+            </ul>
+            <ul>
+                <li>投资者专区</li>
+                <li>人力资源</li>
+                <li>联系我们</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 品牌与产品 -->
+    <div class="bTop clearfix" style="display: none;">
+        <div>
+            <p>点滴<strong>品质</strong>从“小”做起</p>
+        </div>
+        <div>
+            <ul>
+                <li>品牌产品</li>
+                <li>产品品类</li>
+                <li>生产到餐桌</li>
+            </ul>
+            <ul>
+                <li>360°探秘</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 营养与健康 -->
+    <!-- <div class="nHTop clearfix" style="display: none;">
+        <div>
+            <p>点滴营养点滴<strong>健康</strong></p>
+        </div>
+        <div>
+            <ul>
+                <li>营养课程</li>
+                <li>健康饮食</li>
+                <li>消费贴士</li>
+            </ul>
+        </div>
+    </div> -->
+    <!-- 责任与公益 -->
+    <div class="rTop clearfix" style="display: none;">
+        <div>
+            <p>点滴之爱<strong>感动</strong>世界</p>
+        </div>
+        <div>
+            <ul>
+                <li>数据公布</li>
+                <li>爱心公益</li>
+                <li>绿色环保</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 新闻与活动 -->
+    <div class="newsActTop clearfix" style="display: none;">
+        <div>
+            <p>点滴<strong>沟通</strong>链接你我</p>
+        </div>
+        <div>
+            <ul>
+                <li>招标公告</li>
+                <li>精彩活动</li>
+                <li>新闻动态</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            // 关于我们
+            $(".hideL1").mouseover(function() {
+                $(".nHTop").css("display", "none")
+                $(".tTop").css("display", "inline-block")
+            });
+            $(".hideL1").mouseout(function() {
+                $(".tTop").css("display", "none")
+                $(".nHTop").css("display", "inline-block")
+            });
+            // 品牌与产品
+            $(".hideL2").mouseover(function() {
+                $(".nHTop").css("display", "none")
+                $(".bTop").css("display", "inline-block")
+            });
+            $(".hideL2").mouseout(function() {
+                $(".bTop").css("display", "none")
+                $(".nHTop").css("display", "inline-block")
+            });
+            // 营养与健康
+            // $(".hideL3").mouseover(function() {
+            //     $(".nHTop").css("display", "inline-block")
+            // });
+            // $(".hideL3").mouseout(function() {
+            //     $(".nHTop").css("display", "none")
+            // });
+            // 责任与公益
+            $(".hideL4").mouseover(function() {
+                $(".nHTop").css("display", "none")
+                $(".rTop").css("display", "inline-block")
+            });
+            $(".hideL4").mouseout(function() {
+                $(".rTop").css("display", "none")
+                $(".nHTop").css("display", "inline-block")
+            });
+            // 新闻与活动
+            $(".hideL5").mouseover(function() {
+                $(".nHTop").css("display", "none")
+                $(".newsActTop").css("display", "inline-block")
+            });
+            $(".hideL5").mouseout(function() {
+                $(".newsActTop").css("display", "none")
+                $(".nHTop").css("display", "inline-block")
+            });
+        });
+    </script>
+    <!--  -->
+
+    <div class="logoUs">
+        <p class="logoUs1">不仅是丰富的<strong>知识</strong>，</p>
+        <p class="logoUs2">更是贴心的<strong>服务</strong>。</p>
+        <p>Not only information,but also warmly serices.</p>
+    </div>
+    <!-- 资讯内容区 -->
+    <div class="data center clearfix">
+        <div class="dataLeftBrand">
+            <div class="dLBrand">
+                <li>营养与健康</li>
+                <li>营养课程</li>
+                <li>健康饮食</li>
+                <li>消费贴士</li>
+            </div>
+        </div>
+        <div class="dataRightBrand">
+            <div class="brandTop">
+                <p class="brandTop1">营养与健康</p>
+                <div>
+                    <p>我们能奉献给你的，除了优质的产品，还有入微的关怀。</p>
+                    <p>我们收集整理了很多实用的内容，希望对你的生活有帮助。</p>
+                </div>
+            </div>
+            <div class="aboutOne">
+                <div class="nHealthTitle">
+                    <p>营养课程</p>
+                </div>
+                <div class="nHealthImg">
+                    <img src="./image/nutritionHealth/banner1.png" alt="">
+                </div>
+                <div class="nHealthText">
+                    <div>
+                        <li>母亲DNA摄入与胎儿、婴儿间发育的关系…</li>
+                        <li>母亲与胎儿、婴儿间营养状况的关系…</li>
+                        <li>母亲与胎儿、婴儿间DNA营养状况关系的生理依据…</li>
+                        <li>为什么要吃奶酪？</li>
+                        <li>奶酪--怎么吃？</li>
+                    </div>
+                    <p class="clearfix ">更多>></p>
+                </div>
+            </div>
+            <div class="aboutOne">
+                <div class="nHealthTitle">
+                    <p>健康饮食</p>
+                </div>
+                <div class="nHealthImg">
+                    <img src="./image/nutritionHealth/banner2.png" alt="">
+                </div>
+                <div class="nHealthText">
+                    <div>
+                        <li>白领吃奶酪的好处？</li>
+                        <li>吃奶酪的好处？</li>
+                        <li>请问奶酪和酸奶有什么区别？</li>
+                        <li>吃奶酪有助于减肥吗？</li>
+                        <li>经常吃奶酪有什么利弊？</li>
+                    </div>
+                    <p class="clearfix ">更多>></p>
+                </div>
+            </div>
+            <div class="aboutOne">
+                <div class="nHealthTitle">
+                    <p>消费贴士</p>
+                </div>
+                <div class="nHealthImg">
+                    <img src="./image/nutritionHealth/banner3.png" alt="">
+                </div>
+                <div class="nHealthText">
+                    <div>
+                        <li>奶粉中重要的十大营养元素功能</li>
+                        <li>购买奶酪的常识（二）</li>
+                        <li>购买奶酪的常识（一）</li>
+                        <li>奶酪的储藏</li>
+                        <li>适合自己的奶酪</li>
+                    </div>
+                    <p class="clearfix ">更多>></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部信息区 -->
+    <div class="index-bottom center ">
+        <ul class="clearfix ">
+            <li>关于我们</li>
+            <li>媒体中心</li>
+            <li>投资者中心</li>
+            <li>加入我们</li>
+            <li>
+                <p>其他站点查询</p>
+                <img src="./image/logo1.png " alt=" ">
+            </li>
+            <li>
+                <p>官方微信</p>
+                <img src="./image/logo2.png " alt=" ">
+            </li>
+            <li>
+                <p>官方微信</p>
+                <img src="./image/logo3.png " alt=" ">
+            </li>
+        </ul>
+    </div>
+    <!-- 底部ICP -->
+    <div class="icp-bottom ">
+        <p>CopyRight 2006-2013,All Rights Reserved 内蒙古蒙牛乳业 蒙ICP备05005622号 </p>
+    </div>
+</body>
+
+</html>
